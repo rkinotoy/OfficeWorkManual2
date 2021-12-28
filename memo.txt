@@ -1,0 +1,71 @@
+ 211031: P91まで確認。
+　　　　https://github.com/github/gitignore
+
+211108: 
+P102の「ブランチを作る」とP104の「ブランチを切り替える」を実験で確認した。
+
+21112:
+以下2つを完了。
+P109の「masterブランチのコミットを取り込む」
+p111の「他のブランチをmasterブランチに取り込む」
+次回はP115「ブランチを削除する」より。
+
+211116(火)
+P115の「ブランチを削除する」がうまくいかない。
+削除プロセスは順調に進むが、その結果、依然としてsub_manualのブランチが
+残っている。また、webのリモートリポジトリでは、そもそも削除をする画面が
+出てこない。
+
+211120(土)
+P115の「ブランチを削除する」を今日改めて実行したら、うまく削除できた。
+P116のリモートリポジトリのサブ・ブランチはすでに削除されていた。
+P120の「プライベート・レポジトリにする」を実行し、以下のメッセージが出て、成功。
+実際、iPhoneでgithub.com/rkinotoyのOfficeWorkManualがアクセスできなくなった。
+You can upload a social image, but it will not be visible publicly while rkinotoy/OfficeWorkManual is private.
+＜次回はP124のプルリクエストから＞
+
+211123(火)
+P126の「プルリクエスト用のブランチを作成する」
+実行場所は、github.com/rkinotoy/OfficeWorkManual 
+P130まではうまく行ったが、P131の「ファイルの変更をレビューする」がうまく行かない。
+レビューする人(rkino)のgithub.comサイトにはそもそも「OfficeWorkManual」のリポジトリがない。
+本来、rkinotoyとrkinoの両方に「OfficeWorkManual」のリポジトリが存在すべきなのだろうか？？
+次回はP131の「ファイルの変更をレビューする」から。
+
+211126(金)
+rkinoからgithub.com/rkinotoyの「OfficeWorkManual」にアクセスすると、「サブマニュアルのアップデート
+を行いました」のプルリクエストがちゃんとアップされていることがわかった。前回はこれが見えなかったので
+不思議だ。github.com/rkinoの方にはもともと「OfficeWorkManual」はなくて当たり前だから、前回も
+「github.com/rkinotoy」をアクセスいたはずだが、勘違いだったのかな？
+
+P131～P１５０まで、rkinotoyとrkino間のやり取りとPull RequestのCloseやサブ・ブランチの削除まで
+動作確認できた。次回はP151より。
+
+211203(金)
+「GitHub上でファイルを編集する」はOK。
+「誰がこの行を変更したのか調査する」はOK。
+「画像の差分を見る」は初め苦労したが、結局OK。
+苦労したのは、P155の「②<〇〇commits>」が見つからなかった。結局、行の右上の時計のマーク
+のようなところがそれであるこがわかった。
+次回は、P158から。
+
+211211(土)
+gitコマンドの使い方を学び始めた。P161まで確認済。
+次回はP162から。
+
+211212(日)
+P162の「cd ~/Documents/GitHub」で、Documents/GitHubが存在しない。
+それで、独自にDesktopにレポジトリを作ろう。
+で、現在のディレクトリの位置を知りたい。調べる方法は「pwd」
+$ pwd
+/c/Users/rkino/Desktop/OfficeWorkManual
+
+$cd ../
+$mkdir OfficeWorkManual2
+$cd OfficeWorkManual2
+$git init
+
+以上で新しいレポジトリがDesktopにできた。
+次回は、P163より。
+
+
